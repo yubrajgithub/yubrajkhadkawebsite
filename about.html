@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> about us</title>
+    <html lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="aboutstyle.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+</head>
+
+<body id="about">
+    <header>
+        <nav>
+            <div class="left">
+                <img src="image/logo.jpg" alt="" srcset="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="newservice.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallary</a></li>
+                    <li><a href="product.html">Product</a></li>
+                </ul>
+            </div>
+            <div class="social-logo">
+                <ul>
+                    <li> <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i>facebook</a>
+                    </li>
+                    <li> <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i>Instagram</a></li>
+                    <li> <a href="https://twitter.com/"><i class="fa fa-twitter"></i>Twitter</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="section">
+        <div class="contains">
+            <div class="title">
+                <h1> About Us</h1>
+            </div>
+            <div class="content">
+                <div class="intro">
+                    <p class="justify-content">Welcome to my personal portfolio website! My name is Yubraj Khadka, and I
+                        am thrilled to share my journey and showcase my skills with you. Currently pursuing my 6th
+                        semester in BScIT at Padmashree International College, I have been passionately exploring
+                        various aspects of technology and design. As a multidisciplinary professional, I possess a
+                        diverse range of skills that enable me to excel in different areas. I have a keen interest and
+                        expertise in graphics design, where I enjoy
+                        transforming ideas into visually captivating experiences. Whether it's designing logos, creating
+                        stunning user interfaces, or crafting engaging marketing materials, I strive to create designs
+                        that make a lasting impression.</p>
+
+                    <div class="additional-content">
+                        <!-- Add your additional content here -->
+                        <p>Additionally, I have a strong foundation in front-end development, which allows me to bring
+                            designs to life on the web. With proficiency in HTML, CSS, and JavaScript, I am capable of
+                            building responsive and interactive websites that provide seamless user experiences. I am
+                            well-versed in frameworks like Bootstrap and have experience in developing WordPress themes,
+                            enabling me to create dynamic and customizable websites efficiently. Furthermore, my
+                            knowledge extends to the realm of programming. I have a solid understanding of
+                            Python, Java, and C++, which enables me to solve complex problems and develop efficient
+                            software
+                            solutions. I enjoy exploring the intricacies of these programming languages and leveraging
+                            their
+                            capabilities to create innovative applications.</p>
+                    </div>
+
+                    <div class="button">
+                        <a href="#" id="read-more-btn">Read More</a>
+                    </div>
+
+
+
+
+
+
+                    <!-- <div class="button">
+                        <a href="">Read More</a>
+                    </div> -->
+
+
+                </div>
+
+
+            </div>
+            <div class="image-section">
+                <img src="image/myself.jpg">
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i> </a>
+                <a href="https://twitter.com/""><i class=" fa fa-twitter"></i> </a>
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="containers">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>download our app</h3>
+                    <p>download app for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="image/ggole.jpg">
+                        <img src="image/play.jpg">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <p>
+                        How was My protfilo
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>useful link</h3>
+                    <ul>
+                        <li>coupcns</li>
+                        <li>blog post</li>
+                        <li>return policy</li>
+                        <li>coupcns</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>follow us</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i>facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i>Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/"><i class="fa fa-twitter"></i>Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/"><i class="fa fa-youtube-play"></i>youtube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Get the necessary elements
+        const readMoreBtn = document.getElementById("read-more-btn");
+        const additionalContent = document.querySelector(".additional-content");
+
+        // Define the toggle function
+        function toggleAdditionalContent() {
+            additionalContent.classList.toggle("show");
+            if (additionalContent.classList.contains("show")) {
+                readMoreBtn.textContent = "Read Less";
+            } else {
+                readMoreBtn.textContent = "Read More";
+            }
+        }
+
+        // Attach a click event listener to the button
+        readMoreBtn.addEventListener("click", toggleAdditionalContent);
+    </script>
+
+</body>
+
+</html>

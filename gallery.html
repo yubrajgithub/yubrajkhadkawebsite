@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="gallary.css">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">
+                <img src="image/logo.jpg" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="newservice.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallary</a></li>
+                    <li><a href="product.html">Product</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <ul>
+                    <li> <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i>facebook</a>
+                    </li>
+                    <li> <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i>Instagram</a></li>
+                    <li> <a href="https://twitter.com/"><i class="fa fa-twitter"></i>Twitter</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Our Photo Gallary</h1>
+        <div class="gallery-options">
+            <button class="active" onclick="filterGallery('all')">All Photos</button>
+            <button onclick="filterGallery('award')">Award Photos</button>
+            <button onclick="filterGallery('tour')">Tour Photos</button>
+            <button onclick="filterGallery('event')">Event Photos</button>
+        </div>
+
+        <div class="photo-gallary">
+         <div class="photo award">
+                <img src="image/1.jpg" alt="Award Photo">
+            </div>
+            <div class="photo tour">
+                <img src="image/2.jpeg" alt="Tour Photo">
+            </div>
+            <div class="photo event">
+                <img src="image/3.jpg" alt="Event Photo">
+            </div>
+
+
+            <div class="photo award">
+                <img src="image/4.jpg" alt="Award Photo">
+            </div>
+            <div class="photo tour">
+                <img src="image/5.jpg" alt="Tour Photo">
+            </div>
+            <div class="photo event">
+                <img src="image/man.jpg" alt="Event Photo">
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="containers">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>download our app</h3>
+                    <p>download app for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="image/ggole.jpg">
+                        <img src="image/play.jpg">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <p>
+                        How was My protfilo
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>useful link</h3>
+                    <ul>
+                        <li>coupcns</li>
+                        <li>blog post</li>
+                        <li>return policy</li>
+                        <li>coupcns</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>follow us</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i>facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i>Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/"><i class="fa fa-twitter"></i>Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/"><i class="fa fa-youtube-play"></i>youtube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        function filterGallery(category) {
+            const photos = document.getElementsByClassName('photo');
+            for (let i = 0; i < photos.length; i++) {
+                const photo = photos[i];
+                if (category === 'all' || photo.classList.contains(category)) {
+                    photo.style.display = 'block';
+                } else {
+                    photo.style.display = 'none';
+                }
+            }
+
+            const buttons = document.getElementsByClassName('gallery-options')[0].getElementsByTagName('button');
+            for (let i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('active');
+            }
+
+            const activeButton = document.querySelector(`button[data-category="${category}"]`);
+            activeButton.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

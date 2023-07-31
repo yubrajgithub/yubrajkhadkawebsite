@@ -1,0 +1,345 @@
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "poppins", sans-senif;
+        }
+
+        body {
+
+            color: aliceblue;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(102, 8, 86);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        nav ul li a:hover {
+            color: rgb(99, 153, 201);
+            font-size: 1.01rem;
+        }
+
+        .left img {
+    height: 85px;
+}
+
+        .social ul li {
+            margin: 5px;
+            padding: 4px;
+        }
+
+
+        .contact-section {
+            width: 100%;
+            height: 478px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(image/contact.jpg);
+
+
+
+        }
+
+        .contact-info {
+            color: #ffffff;
+            max-width: 500px;
+            line-height: 65px;
+            padding-left: 100px;
+            font-size: 18px;
+        }
+
+        .contact-info i {
+            margin-right: 20px;
+            font-size: 25px;
+
+        }
+
+        .contact-info .mail {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .contact-form {
+            max-width: 700px;
+            margin-right: 50px;
+            margin-bottom: 14px;
+        }
+
+        .contact-info,
+        .contact-form {
+            flex: 1;
+
+
+        }
+
+        .contact-form h2 {
+            color: #B7FF00;
+            font-size: 35px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            margin-top: 4px;
+        }
+
+        .contact-form .text-box {
+            background: #000;
+            color: #fff;
+            border: none;
+            width: calc(50% - 10px);
+            height: 50px;
+            padding: 12px;
+            font-size: 15px;
+            border-radius: 5px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0.1);
+            margin-bottom: 20px;
+            opacity: 0.9;
+
+
+        }
+
+
+        .contact-form textarea {
+            background: #000;
+            color: #fff;
+            border: none;
+            width: 100%;
+            padding: 15px;
+            font-size: 15px;
+            min-height: 200px;
+            resize: verical;
+            border-radius: 5px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px opacity 0.9;
+
+        }
+
+        .contact-form .send-btn {
+            float: right;
+            background: #ADC0E2;
+            color: #fff;
+            border: none;
+            width: 120px;
+            height: 40px;
+            font-size: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form .send-btn:hover {
+            background: #F7E303;
+
+        }
+
+        footer {
+    background: #000000;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+.containers {
+    max-width: 1400px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.row {
+    display: flex;
+    align-items: Center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+.footer-col-1 h3, .footer-col-3 h3, .footer-col-4 h3{
+   
+    margin-bottom: 15px;
+
+}
+
+.footer-col-4 ul, .footer-col-3 ul{
+    list-style: none;
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-col-4 ul li, .footer-col-3 ul li{
+    padding: 1px 0;
+}
+.footer-col-4 ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+.app-logo {
+    margin-top: 20px;
+}
+
+.app-logo img {
+    width: 140px;
+}
+
+
+        @media screen and (max-width:950px) {
+            .contact-section {
+                flex-direction: column;
+            }
+
+            .contact-info,
+            .contact-form {
+                margin: 30px 50px;
+
+            }
+
+            .contact-form h2 {
+                font-size: 30px;
+
+            }
+
+            .contact-form .text-box {
+                width: 100%;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body id="login">
+    <header>
+        <nav>
+            <div class="left">
+                <img src="image/logo.jpg" alt="logo">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="newservice.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallary</a></li>
+                    <li><a href="product.html">Product</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <ul>
+                    <li> <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i>facebook</a>
+                    </li>
+                    <li> <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i>Instagram</a></li>
+                    <li> <a href="https://twitter.com/"><i class="fa fa-twitter"></i>Twitter</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="contact-section">
+        <div class="contact-info">
+
+            <div><i class="fa fa-map-marker"></i>Tinkuna,Kathmandu,Nepal</div>
+            <div><a class="mail" href="mailto:khadkayubraj@gmail.com"><i
+                        class="fa fa-envelope-o"></i>khadkayubraj@gmail.com</a>
+            </div>
+            <div><i class="fa fa-phone"></i>9843004520</div>
+            <div><i class="fa fa-clock-o"></i>sun-fri 800am-4pm</div>
+
+        </div>
+        <div class="contact-form">
+            <h2>Contact us</h2>
+            <form class="contact" action="" method="post">
+                <input type="text" name="name" class="text-box" placeholder="your Name" required>
+                <input type="email" name="email" class="text-box" placeholder="your Email" required>
+                <textarea name="message" row="4" placeholder="Your Message" required> </textarea>
+                <button type="submit" class="send-btn"
+                    onclick="alert('Thank you for your form submittion. We will send you email soon!!')">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="containers">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>download our app</h3>
+                    <p>download app for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="image/ggole.jpg">
+                        <img src="image/play.jpg">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <p>
+                        How was My protfilo
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>useful link</h3>
+                    <ul>
+                        <li>coupcns</li>
+                        <li>blog post</li>
+                        <li>return policy</li>
+                        <li>coupcns</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>follow us</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i>facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i>Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/"><i class="fa fa-twitter"></i>Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/"><i class="fa fa-youtube-play"></i>youtube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

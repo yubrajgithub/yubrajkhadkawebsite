@@ -1,0 +1,41 @@
+<div class="container">
+    <h1 class="heading">Our Service</h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="image/htmlogo.png" alt="" srcset="">
+            <h3>HTML 5</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut ipsam non inventore quas, consequatur
+                voluptatum sed iure ut blanditiis eum!</p>
+            <a href="#" class="btn read-more">Read more</a>
+            <div class="extra-info">
+                <p>Additional information about HTML 5 goes here.</p>
+            </div>
+        </div>
+        <!-- Repeat the same structure for other boxes -->
+    </div>
+</div>
+
+<script>
+    // Get all the "Read more" buttons
+    const readMoreButtons = document.querySelectorAll('.read-more');
+
+    // Add event listener to each button
+    readMoreButtons.forEach(function (button) {
+        button.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent the link from scrolling to the top
+
+            const box = this.parentNode; // Get the parent box element
+
+            if (box.classList.contains('expanded')) {
+                // Box is expanded, collapse it
+                box.classList.remove('expanded');
+                this.textContent = 'Read more';
+            } else {
+                // Box is collapsed, expand it
+                box.classList.add('expanded');
+                this.textContent = 'Read less';
+            }
+        });
+    });
+
+</script>
